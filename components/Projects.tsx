@@ -27,30 +27,6 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
               delay={0.2 + index * 0.1}
             >
               <div className="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 card-hover">
-                {/* <div className="relative group">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-4 left-4 flex space-x-2">
-                      <a
-                        href={project.demo}
-                        className="p-2 bg-cyan-400 text-black rounded-lg hover:bg-cyan-300 transition-colors"
-                      >
-                        <ExternalLink className="w-4 h-4" />
-                      </a>
-                      <a
-                        href={project.code}
-                        className="p-2 bg-purple-500 text-white rounded-lg hover:bg-purple-400 transition-colors"
-                      >
-                        <Github className="w-4 h-4" />
-                      </a>
-                    </div>
-                  </div>
-                </div> */}
-
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-slate-100">
                     {project.title}

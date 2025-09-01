@@ -287,7 +287,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://tu-dominio.com"), // Cambia esto por tu dominio real
+  metadataBase: new URL("https://tu-dominio.com"),
   alternates: {
     canonical: "/",
   },
@@ -295,13 +295,13 @@ export const metadata: Metadata = {
     title: "Mateo Padilla Peña - Desarrollador Full Stack | Colombia",
     description:
       "Portfolio de Mateo Padilla Peña, desarrollador Full Stack junior en Colombia. Especializado en JavaScript, Python, Node.js, TypeScript, Vue.js. Experiencia en desarrollo frontend y backend. Disponible para proyectos remotos.",
-    url: "https://tu-dominio.com", // Cambia esto por tu dominio real
+    url: "https://tu-dominio.com",
     siteName: "Mateo Padilla Peña Portfolio",
     locale: "es_CO",
     type: "website",
     images: [
       {
-        url: "/portfolio-image.jpeg", // Asegúrate de que esta imagen existe
+        url: "/portfolio-image.jpeg",
         width: 1200,
         height: 630,
         alt: "Mateo Padilla Peña - Desarrollador Full Stack",
@@ -313,7 +313,7 @@ export const metadata: Metadata = {
     title: "Mateo Padilla Peña - Desarrollador Full Stack | Colombia",
     description:
       "Portfolio de Mateo Padilla Peña, desarrollador Full Stack junior en Colombia. Especializado en JavaScript, Python, Node.js, TypeScript, Vue.js. Experiencia en desarrollo frontend y backend. Disponible para proyectos remotos.",
-    images: ["/portfolio-image.jpeg"], // Asegúrate de que esta imagen existe
+    images: ["/portfolio-image.jpeg"],
   },
   robots: {
     index: true,
@@ -327,7 +327,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "tu-google-verification-code", // Agrega tu código de verificación de Google Search Console
+    google: "tu-google-verification-code",
   },
 };
 

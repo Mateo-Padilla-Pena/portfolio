@@ -18,12 +18,12 @@ interface ContactProps {
 }
 
 const Contact: React.FC<ContactProps> = ({ personal }) => {
-  // Initialize EmailJS
   React.useEffect(() => {
     if (process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY) {
       emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
     }
   }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -36,15 +36,12 @@ const Contact: React.FC<ContactProps> = ({ personal }) => {
   const [isFormValid, setIsFormValid] = useState(false);
   const [emailError, setEmailError] = useState("");
 
-  // Email validation function
   const isValidEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
 
-  // Validate form
   useEffect(() => {
-    // Email validation
     if (formData.email.trim() !== "" && !isValidEmail(formData.email)) {
       setEmailError("Por favor ingresa un email válido");
     } else {
@@ -64,7 +61,6 @@ const Contact: React.FC<ContactProps> = ({ personal }) => {
 
     if (!isFormValid) return;
 
-    // Check if environment variables are available
     if (
       !process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ||
       !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ||
@@ -276,7 +272,6 @@ const Contact: React.FC<ContactProps> = ({ personal }) => {
           </ScrollAnimation>
         </div>
 
-        {/* Success dialog */}
         {showSuccess && (
           <div className="fixed top-4 right-4 bg-green-600 text-white px-6 py-4 rounded-lg shadow-lg flex items-center space-x-3 z-50 animate-slide-in">
             <CheckCircle className="w-6 h-6" />
@@ -287,7 +282,6 @@ const Contact: React.FC<ContactProps> = ({ personal }) => {
           </div>
         )}
 
-        {/* Error dialog */}
         {showError && (
           <div className="fixed top-4 right-4 bg-red-600 text-white px-6 py-4 rounded-lg shadow-lg flex items-center space-x-3 z-50 animate-slide-in">
             <AlertCircle className="w-6 h-6" />

@@ -26,13 +26,12 @@ const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // Ejecutar inmediatamente sin esperar
           setIsVisible(true);
         }
       },
       {
-        threshold: 0.01, // Extremadamente sensible - solo 1% visible
-        rootMargin: "200px 0px 200px 0px", // Margen muy positivo para activar mucho antes
+        threshold: 0.01,
+        rootMargin: "200px 0px 200px 0px",
       }
     );
 
@@ -73,7 +72,7 @@ const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
         opacity: isVisible ? 1 : 0,
         transform: getTransform(),
         transition: `all ${duration}s cubic-bezier(0.4, 0, 0.2, 1)`,
-        transitionDelay: isVisible ? `${delay}s` : "0s", // Solo aplicar delay cuando es visible
+        transitionDelay: isVisible ? `${delay}s` : "0s",
         willChange: "opacity, transform",
       }}
     >

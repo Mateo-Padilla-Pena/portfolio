@@ -12,7 +12,6 @@ const Navigation: React.FC<NavigationProps> = ({ name }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
-  // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -20,7 +19,6 @@ const Navigation: React.FC<NavigationProps> = ({ name }) => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Animar la navegación al cargar
     setTimeout(() => setIsVisible(true), 500);
 
     return () => window.removeEventListener("scroll", handleScroll);
@@ -28,10 +26,8 @@ const Navigation: React.FC<NavigationProps> = ({ name }) => {
 
   return (
     <>
-      {/* Mobile Header - Only visible on mobile */}
       <MobileHeader name={name} />
 
-      {/* Desktop Navigation - Only visible on desktop */}
       <nav
         className="hidden md:block fixed top-6 left-1/2 z-50"
         style={{
@@ -49,7 +45,6 @@ const Navigation: React.FC<NavigationProps> = ({ name }) => {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          {/* Desktop Navigation Container */}
           <div className="bg-slate-900/70 backdrop-blur-xl border border-slate-700/50 rounded-full px-6 py-3 shadow-2xl shadow-black/20 hover:scale-105 transition-transform duration-300">
             <div className="flex items-center space-x-6">
               {[

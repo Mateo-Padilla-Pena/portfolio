@@ -46,7 +46,6 @@ const TechLogo: React.FC<TechLogoProps> = ({
     return logoMap[logoName] || "";
   };
 
-  // Emojis as fallback for logos that don't load
   const getEmojiFallback = (logoName: string) => {
     const emojiMap: { [key: string]: string } = {
       nestjs: "🪺",
@@ -63,7 +62,6 @@ const TechLogo: React.FC<TechLogoProps> = ({
       alt={`${name} logo`}
       className={className}
       onError={(e) => {
-        // Fallback to a specific emoji if the image doesn't load
         const target = e.target as HTMLImageElement;
         target.style.display = "none";
         const fallback = document.createElement("span");

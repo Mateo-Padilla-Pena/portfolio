@@ -2,11 +2,9 @@
 
 import React from "react";
 
-// Import portfolio data
 import portfolioData from "../data/portfolio.json";
 import type { PortfolioData } from "../types/portfolio";
 
-// Import components
 import Navigation from "../components/Navigation";
 import Hero from "../components/Hero";
 import About from "../components/About";

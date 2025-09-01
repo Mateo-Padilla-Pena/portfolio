@@ -20,7 +20,6 @@ const About: React.FC<AboutProps> = ({ story, skills }) => {
           </h2>
         </ScrollAnimation>
 
-        {/* Story */}
         <ScrollAnimation direction="up" delay={0.2}>
           <div className="mb-16">
             <p className="text-lg text-slate-400 leading-relaxed max-w-4xl mx-auto text-center">
@@ -29,7 +28,6 @@ const About: React.FC<AboutProps> = ({ story, skills }) => {
           </div>
         </ScrollAnimation>
 
-        {/* Technologies */}
         <ScrollAnimation direction="up" delay={0.3}>
           <div className="bg-slate-800 p-8 rounded-xl border border-slate-700">
             <h3 className="text-2xl font-semibold mb-8 text-center text-slate-100">
@@ -37,7 +35,6 @@ const About: React.FC<AboutProps> = ({ story, skills }) => {
             </h3>
 
             <div className="grid md:grid-cols-3 gap-8">
-              {/* Backend */}
               <ScrollAnimation direction="left" delay={0.4}>
                 <div>
                   <h4 className="text-lg font-semibold mb-4 text-slate-100 flex items-center justify-start">
@@ -68,7 +65,6 @@ const About: React.FC<AboutProps> = ({ story, skills }) => {
                 </div>
               </ScrollAnimation>
 
-              {/* Frontend */}
               <ScrollAnimation direction="up" delay={0.4}>
                 <div>
                   <h4 className="text-lg font-semibold mb-4 text-slate-100 flex items-center justify-start">
@@ -99,7 +95,6 @@ const About: React.FC<AboutProps> = ({ story, skills }) => {
                 </div>
               </ScrollAnimation>
 
-              {/* Servicios */}
               <ScrollAnimation direction="right" delay={0.4}>
                 <div>
                   <h4 className="text-lg font-semibold mb-4 text-slate-100 flex items-center justify-start">
