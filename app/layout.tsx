@@ -294,7 +294,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mateo Padilla Peña - Desarrollador Full Stack | Colombia",
     description:
-      "Portfolio de Mateo Padilla Peña, desarrollador Full Stack junior en Colombia. Especializado en React, Node.js, TypeScript, Next.js.",
+      "Portfolio de Mateo Padilla Peña, desarrollador Full Stack junior en Colombia. Especializado en JavaScript, Python, Node.js, TypeScript, Vue.js. Experiencia en desarrollo frontend y backend. Disponible para proyectos remotos.",
     url: "https://tu-dominio.com", // Cambia esto por tu dominio real
     siteName: "Mateo Padilla Peña Portfolio",
     locale: "es_CO",
@@ -312,7 +312,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mateo Padilla Peña - Desarrollador Full Stack | Colombia",
     description:
-      "Portfolio de Mateo Padilla Peña, desarrollador Full Stack junior en Colombia. Especializado en React, Node.js, TypeScript, Next.js.",
+      "Portfolio de Mateo Padilla Peña, desarrollador Full Stack junior en Colombia. Especializado en JavaScript, Python, Node.js, TypeScript, Vue.js. Experiencia en desarrollo frontend y backend. Disponible para proyectos remotos.",
     images: ["/portfolio-image.jpeg"], // Asegúrate de que esta imagen existe
   },
   robots: {
